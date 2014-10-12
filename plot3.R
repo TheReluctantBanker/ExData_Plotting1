@@ -22,7 +22,7 @@ household.data=transform(household.data,Time=as.POSIXct(strptime(Time,"%H:%M:%S"
 #subsetting the data
 subsetted.data=subset(household.data,(household.data$Date==as.Date("2007-02-01") | household.data$Date ==as.Date("2007-02-02")) )
 
-#plotting the  - plot 1 - this is a histogram
+#plotting the  - plot 1 - this is a multiple line plot
 
 hist(subsetted.data$Global_active_power,main="Global Active Power",xlab="Global Active Power(kilowatts)",col="red")
 
