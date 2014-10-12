@@ -20,7 +20,7 @@ household.data=transform(household.data,Time=as.POSIXct(strptime(Time,"%H:%M:%S"
 #subsetting the data
 subsetted.data=subset(household.data,(household.data$Date==as.Date("2007-02-01") | household.data$Date ==as.Date("2007-02-02")) )
 
-#making plot 4 - need a 2 by 2 plot window
+#making four plots - need a 2 by 2 plot window
 par(mfrow=c(2,2))
 
 #making the four plots one after the other
